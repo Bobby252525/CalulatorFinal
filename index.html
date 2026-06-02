@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-</head>
 <body>
     <p>CALCULATOR: </p>
-    <p>A: <input type="text" id="display" enabled></p>
-    <p>B: <input type="text" id="display" enabled></p>
-    <p>Solution: <input type="text" id="display" disabled></p>
+    <p>A: <input type="number" id="num1" oninput="solution()"></p>
+    <p>B: <input type="number" id="num2" oninput="solution()"></p>
+    <p>Solution: <output id="solution"></output></p>
     <p>For Multiplication click <a href="multiplication.html">here</a></p>
 </body>
 </html>
+<script>
+    function solution() {
+        let num1 = Number(document.getElementById("num1").value);
+        let num2 = Number(document.getElementById("num2").value);
+        document.getElementById("solution").value = num1 + num2;
+    }
+</script>
