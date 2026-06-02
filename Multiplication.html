@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p>CALCULATOR: </p>
+    <p>A: <input type="number" id="num1" oninput="solution()"></p>
+    <p>B: <input type="number" id="num2" oninput="solution()"></p>
+    <p>Solution: <output id="solution"></output></p>
+    <p>For Addition click <a href="index.html">here</a></p>
+</body>
+</html>
+<script>
+    function solution() {
+        let num1 = Number(document.getElementById("num1").value);
+        let num2 = Number(document.getElementById("num2").value);
+        document.getElementById("solution").value = num1 * num2;
+    }
+</script>
