@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <u>SUBTRACTION CALCULATOR</u>
+    <p>A: <input type="number" id="num1" oninput="Solution()"></p>
+    <p>B: <input type="number" id="num2" oninput="Solution()"></p>
+    <p>Solution: <output id="solution"></output></p>
+    <p>For Addition calculator click <a href="index.html">here</a></p>
+    <p>For Multiplication calculator click <a href="Multiplication.html">here</a></p>
+</body>
+<script>
+    function Solution() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        document.getElementById("solution").value = num1 - num2;
+    }
+</script>
