@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Division Calculator</title> 
-</head>
+<style>
+    body {
+        background-color: purple;
+    }
+    u {
+        display: block;
+        font-size: 40px;
+        color: white;
+    }
+    p {
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+</style>
 <body>
     <u style="display: block; text-align: center;">DIVISION CALCULATOR: </u>
-    <p>A: <input type="number" id="num1" oninput="solution()"></p>
-    <p>B: <input type="number" id="num2" oninput="solution()"></p>
+    <p>A: <input type="number" id="num1" oninput="solution()" style="font-size: 30px;"></p>
+    <p>B: <input type="number" id="num2" oninput="solution()" style="font-size: 30px;"></p>
     <p>Solution: <output id="solution"></output></p>
     <p>For Addition click <a href="index.html">here</a></p>
     <p>For Multiplication click <a href="Multiplication.html">here</a></p>
-    <button onclick="window.location.href='Subtraction.html'">Subtraction</button>
+    <button onclick="window.location.href='Subtraction.html'" style="font-size: 30px;">Subtraction</button>
 </body>
 </html>
 <script>

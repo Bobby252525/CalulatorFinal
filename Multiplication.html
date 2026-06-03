@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    body {
+        background-color: green;
+    }
+    u {
+        display: block;
+        font-size: 40px;
+        color: white;
+    }
+    p {
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+</style>
 <body>
     <u style="display: block; text-align: center;">MULTIPLICATION CALCULATOR: </u>
-    <p>A: <input type="number" id="num1" oninput="solution()"></p>
-    <p>B: <input type="number" id="num2" oninput="solution()"></p>
+    <p>A: <input type="number" id="num1" oninput="solution()" style="font-size: 30px;"></p>
+    <p>B: <input type="number" id="num2" oninput="solution()" style="font-size: 30px;"></p>
     <p>Solution: <output id="solution"></output></p>
     <p>For Addition click <a href="index.html">here</a></p>
     <p>For Division click <a href="division.html">here</a></p>
-    <p>For Subtraction click <a href="Subtraction.html">here</a
+    <button onclick="window.location.href='Subtraction.html'" style="font-size: 30px;">Subtraction</button>
 </body>
 </html>
 <script>

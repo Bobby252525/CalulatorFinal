@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    body {
+        background-color: red;
+    }
+    u {
+        display: block;
+        font-size: 40px;
+        color: white;
+    }
+    p {
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+</style>
 <body>
     <u style="display: block; text-align: center;">SUBTRACTION CALCULATOR</u>
-    <p>A: <input type="number" id="num1" oninput="Solution()"></p>
-    <p>B: <input type="number" id="num2" oninput="Solution()"></p>
+    <p>A: <input type="number" id="num1" oninput="Solution()" style="font-size: 30px;"></p>
+    <p>B: <input type="number" id="num2" oninput="Solution()" style="font-size: 30px;"></p>
     <p>Solution: <output id="solution"></output></p>
     <p>For Addition calculator click <a href="index.html">here</a></p>
     <p>For Multiplication calculator click <a href="Multiplication.html">here</a></p>
-    <p>For Division calculator click <a href="Division.html">here</a></p>
+    <button onclick="window.location.href='Division.html'" style="font-size: 30px;">Division</button>
 </body>
 <script>
     function Solution() {

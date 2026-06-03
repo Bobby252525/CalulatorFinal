@@ -2,23 +2,28 @@
 <html lang="en">
     <style>
         body {
-            background-color: rgba(255, 0, 0, 0.806);
+            background-color: darkblue;
         }
         u {
             color: white;
+            font-size: 40px;
+            display: block;
+            font-family: "Times New Roman", serif;
         }
         p {
             color: white;
+            display: block;
+            font-size: 30px;
         }
     </style>
 <body>
     <u style="display: block; text-align: center;">ADDITION CALCULATOR: </u>
-    <p>A: <input type="number" id="num1" oninput="solution()"></p>
-    <p>B: <input type="number" id="num2" oninput="solution()"></p>
+    <p>A: <input type="number" id="num1" oninput="solution()" style="font-size: 30px;"></p>
+    <p>B: <input type="number" id="num2" oninput="solution()" style="font-size: 30px;"></p>
     <p>Solution: <output id="solution"></output></p>
     <p>For Multiplication click <a href="multiplication.html">here</a></p>
     <p>For Subtraction click <a href="Subtraction.html">here</a></p>
-    <button onclick="window.location.href='Division.html'">Division</button>
+    <button onclick="window.location.href='Division.html'" style="font-size: 30px;">Division</button>
 </body>
 </html>
 <script>
